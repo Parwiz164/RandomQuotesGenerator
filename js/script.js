@@ -32,9 +32,9 @@ function getRandomQuote(){
 function printQuote(){
     let print = getRandomQuote();
 
-    let quote = "<p> " + print.quote + "</p><p>" + print.source + "<span>" + print.citation + "</span><span>" + print.year + "</span></p>";
+    let htmlString = "<p class='quote'>" + print.quote + "</p><p class='source'>" + print.source + "<span class='citation'>" + print.citation + "</span><span class='year'>" + print.year + "</span></p>";
 
-    document.getElementById('quote-box').innerHTML = quote;
+    document.getElementById('quote-box').innerHTML = htmlString;
 
 
 }
